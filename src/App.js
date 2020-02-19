@@ -8,6 +8,7 @@ import About from './components/About'
 import Members from './components/Members'
 import Schedule from './components/Schedule'
 import Contact from './components/Contact'
+import Parallax from './components/Parallax'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,6 +18,7 @@ class App extends Component {
   render() {
     return (
       <HashRouter>
+          <Parallax />
           <Header />
           <Container>
             <Switch>

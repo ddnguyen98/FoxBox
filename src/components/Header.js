@@ -14,29 +14,29 @@ class Header extends Component {
         const toggle = () => this.setState({isOpen: !this.state.isOpen});
 
         return (
-            <Navbar color="light" light expand="md">
+            <Navbar color="light" light expand="md" className="navigation">
                 <Container>
-                <NavbarBrand href="#/">Bella Bella Bella</NavbarBrand>
-                <NavbarToggler onClick={() => toggle()} />
-                    <Collapse isOpen={this.state.isOpen} navbar>
-                        <Nav className="mr-auto" navbar>
-                            <NavItem>
-                                <NavLink href="#/">Home</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="#/about">About</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="#/members">Members</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="#/schedule">Schedule</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="#/contact">Contact</NavLink>
-                            </NavItem>
-                        </Nav>
-                    </Collapse>
+                    <NavbarBrand href="#/">Bella Bella Bella</NavbarBrand>
+                    <NavbarToggler onClick={() => toggle()} />
+                        <Collapse isOpen={this.state.isOpen} navbar>
+                            <Nav className="mr-auto" navbar>
+                                <NavItem>
+                                    <NavLink href="#/">Home</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="#/about">About</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="#/members">Members</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="#/schedule">Schedule</NavLink>
+                                </NavItem>
+                                <NavItem>
+                                    <NavLink href="#/contact">Contact</NavLink>
+                                </NavItem>
+                            </Nav>
+                        </Collapse>
                 </Container>
             </Navbar>
         );
