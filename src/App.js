@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { HashRouter, Switch, Route} from 'react-router-dom'
+import { Container } from 'reactstrap';
 
 import Home from './components/Home'
 import Header from './components/Header'
@@ -17,13 +18,15 @@ class App extends Component {
     return (
       <HashRouter>
           <Header />
-          <Switch>
-            <Route exact path="/" component={Home}/>
-            <Route path="/about" component={About}/>
-            <Route path="/members" component={Members}/>
-            <Route path="/schedule" component={Schedule}/>
-            <Route path="/contact" component={Contact}/>
-          </Switch>
+          <Container>
+            <Switch>
+              <Route exact path="/" component={Home}/>
+              <Route path="/about" component={About}/>
+              <Route path="/members" component={Members}/>
+              <Route path="/schedule" component={Schedule}/>
+              <Route path="/contact" component={Contact}/>
+            </Switch>
+          </Container>
       </HashRouter>
     );
   }
