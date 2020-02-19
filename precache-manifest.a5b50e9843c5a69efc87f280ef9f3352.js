@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "534c7070518afbdd0b913e4eba1efeeb",
+    "revision": "b84da94dfaad8e2e8d7ad50181c4d524",
     "url": "/FoxBox/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FoxBox/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "fb63a5b482d0e3cc3c68",
+    "revision": "2bcc7aca8cdc9d035c4b",
     "url": "/FoxBox/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FoxBox/static/js/2.50ca567b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fb63a5b482d0e3cc3c68",
-    "url": "/FoxBox/static/js/main.dc16c176.chunk.js"
+    "revision": "2bcc7aca8cdc9d035c4b",
+    "url": "/FoxBox/static/js/main.4af0ca57.chunk.js"
   },
   {
     "revision": "a05ed21cd4f9f973d870",
