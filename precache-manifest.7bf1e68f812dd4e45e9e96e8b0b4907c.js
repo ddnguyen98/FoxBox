@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4abdb6d0669721801ac2811184866b52",
+    "revision": "534c7070518afbdd0b913e4eba1efeeb",
     "url": "/FoxBox/index.html"
   },
   {
-    "revision": "9a578222d4f2ef5ae999",
+    "revision": "5237c93543ba2fbca341",
     "url": "/FoxBox/static/css/2.47e06e2e.chunk.css"
   },
   {
-    "revision": "bda0f5bd829e56acad7f",
+    "revision": "fb63a5b482d0e3cc3c68",
     "url": "/FoxBox/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "9a578222d4f2ef5ae999",
-    "url": "/FoxBox/static/js/2.778512c4.chunk.js"
+    "revision": "5237c93543ba2fbca341",
+    "url": "/FoxBox/static/js/2.50ca567b.chunk.js"
   },
   {
     "revision": "bf23039b4e70a07c5aeb1b4010df3572",
-    "url": "/FoxBox/static/js/2.778512c4.chunk.js.LICENSE.txt"
+    "url": "/FoxBox/static/js/2.50ca567b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "bda0f5bd829e56acad7f",
-    "url": "/FoxBox/static/js/main.18eb7437.chunk.js"
+    "revision": "fb63a5b482d0e3cc3c68",
+    "url": "/FoxBox/static/js/main.dc16c176.chunk.js"
   },
   {
     "revision": "a05ed21cd4f9f973d870",
