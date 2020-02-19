@@ -1,22 +1,23 @@
 {
   "files": {
     "main.css": "/FoxBox/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/FoxBox/static/js/main.6ca2a807.chunk.js",
-    "main.js.map": "/FoxBox/static/js/main.6ca2a807.chunk.js.map",
+    "main.js": "/FoxBox/static/js/main.eb0930f7.chunk.js",
+    "main.js.map": "/FoxBox/static/js/main.eb0930f7.chunk.js.map",
     "runtime-main.js": "/FoxBox/static/js/runtime-main.73789e85.js",
     "runtime-main.js.map": "/FoxBox/static/js/runtime-main.73789e85.js.map",
-    "static/js/2.5ff658e7.chunk.js": "/FoxBox/static/js/2.5ff658e7.chunk.js",
-    "static/js/2.5ff658e7.chunk.js.map": "/FoxBox/static/js/2.5ff658e7.chunk.js.map",
+    "static/js/2.a5bab330.chunk.js": "/FoxBox/static/js/2.a5bab330.chunk.js",
+    "static/js/2.a5bab330.chunk.js.map": "/FoxBox/static/js/2.a5bab330.chunk.js.map",
     "index.html": "/FoxBox/index.html",
-    "precache-manifest.b2eb3dfa5a0faee0d8a60d700a43585a.js": "/FoxBox/precache-manifest.b2eb3dfa5a0faee0d8a60d700a43585a.js",
+    "precache-manifest.16399bb124f16f6c08463e9b0e6adfa3.js": "/FoxBox/precache-manifest.16399bb124f16f6c08463e9b0e6adfa3.js",
     "service-worker.js": "/FoxBox/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/FoxBox/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.5ff658e7.chunk.js.LICENSE.txt": "/FoxBox/static/js/2.5ff658e7.chunk.js.LICENSE.txt"
+    "static/js/2.a5bab330.chunk.js.LICENSE.txt": "/FoxBox/static/js/2.a5bab330.chunk.js.LICENSE.txt",
+    "static/media/wan.mp3": "/FoxBox/static/media/wan.138cb2e5.mp3"
   },
   "entrypoints": [
     "static/js/runtime-main.73789e85.js",
-    "static/js/2.5ff658e7.chunk.js",
+    "static/js/2.a5bab330.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.6ca2a807.chunk.js"
+    "static/js/main.eb0930f7.chunk.js"
   ]
 }
