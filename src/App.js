@@ -9,9 +9,7 @@ class App extends Component {
     return (
       <HashRouter>
         <Switch>
-          <main>
             <Link exact to ="/" component={Home}/>
-          </main>
         </Switch>
       </HashRouter>
     );
