@@ -6,8 +6,8 @@ class Schedule extends Component {
         return (
             <div>
                 <h1>Schedule</h1>
-                {raidDates.map((e) => (
-                    <div>
+                {raidDates.map((e, index) => (
+                    <div key={index}>
                         <h2>{e.weekday}</h2>
                         <h3>{e.date}</h3>
                         <p>{e.desc}</p>

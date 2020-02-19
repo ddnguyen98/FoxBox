@@ -29,8 +29,8 @@ class Members extends Component {
             <div>
                 Members
                 <h1>Owners</h1>
-                {owners.map((e) => (
-                    <div>
+                {owners.map((e, index) => (
+                    <div key={index}>
                         <img src={`./images/${e.image}`} alt={`${e.username}`} width="100" height="100"/>
                         <h2>{e.username}</h2>
                         <h3>{e.main}</h3>
@@ -40,8 +40,8 @@ class Members extends Component {
                     </div>
                 ))}
                 <h1>Admin</h1>
-                {admin.map((e) => (
-                    <div>
+                {admin.map((e, index) => (
+                    <div key={index}>
                         <img src={`./images/${e.image}`} alt={`${e.username}`} width="100" height="100"/>
                         <h2>{e.username}</h2>
                         <h3>{e.main}</h3>
@@ -51,8 +51,8 @@ class Members extends Component {
                     </div>
                 ))}
                 <h1>Mods</h1>
-                {mods.map((e) => (
-                    <div>
+                {mods.map((e, index) => (
+                    <div key={index}>
                         <img src={`./images/${e.image}`} alt={`${e.username}`} width="100" height="100"/>
                         <h2>{e.username}</h2>
                         <h3>{e.main}</h3>
@@ -62,8 +62,8 @@ class Members extends Component {
                     </div>
                 ))}
                 <h1>Members</h1>
-                {members.map((e) => (
-                    <div>
+                {members.map((e, index) => (
+                    <div key={index}>
                         <img src={`./images/${e.image}`} alt={`${e.username}`} width="100" height="100"/>
                         <h2>{e.username}</h2>
                         <h3>{e.main}</h3>
