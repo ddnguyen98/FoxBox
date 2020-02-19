@@ -1,0 +1,17 @@
+[
+    {
+     "date":"2/18",
+     "weekday":"Tuesday",
+     "desc":"Kill the savage dog"
+    },
+    {
+        "date":"2/19",
+        "weekday":"Wedsnday",
+        "desc":"Kill the epic dog"
+    },
+    {
+        "date":"2/20",
+        "weekday":"Thursday",
+        "desc":"Gathering Day"
+    }
+]
