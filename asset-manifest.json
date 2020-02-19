@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/FoxBox/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/FoxBox/static/js/main.80b37538.chunk.js",
-    "main.js.map": "/FoxBox/static/js/main.80b37538.chunk.js.map",
+    "main.js": "/FoxBox/static/js/main.d47dce17.chunk.js",
+    "main.js.map": "/FoxBox/static/js/main.d47dce17.chunk.js.map",
     "runtime-main.js": "/FoxBox/static/js/runtime-main.73789e85.js",
     "runtime-main.js.map": "/FoxBox/static/js/runtime-main.73789e85.js.map",
     "static/js/2.5ff658e7.chunk.js": "/FoxBox/static/js/2.5ff658e7.chunk.js",
     "static/js/2.5ff658e7.chunk.js.map": "/FoxBox/static/js/2.5ff658e7.chunk.js.map",
     "index.html": "/FoxBox/index.html",
-    "precache-manifest.f3103a4bc3918f2bba0fa34ef95f3ff0.js": "/FoxBox/precache-manifest.f3103a4bc3918f2bba0fa34ef95f3ff0.js",
+    "precache-manifest.4482bd18210e9d3a39ac459c44acccde.js": "/FoxBox/precache-manifest.4482bd18210e9d3a39ac459c44acccde.js",
     "service-worker.js": "/FoxBox/service-worker.js",
     "static/css/main.5ecd60fb.chunk.css.map": "/FoxBox/static/css/main.5ecd60fb.chunk.css.map",
     "static/js/2.5ff658e7.chunk.js.LICENSE.txt": "/FoxBox/static/js/2.5ff658e7.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.73789e85.js",
     "static/js/2.5ff658e7.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.80b37538.chunk.js"
+    "static/js/main.d47dce17.chunk.js"
   ]
 }

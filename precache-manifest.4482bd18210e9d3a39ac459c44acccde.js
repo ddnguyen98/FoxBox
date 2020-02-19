@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2aa912551f0e87463c06d0df93c6ad4e",
+    "revision": "d19eedf6792dfbd8c8dbc5bb9ac35a2b",
     "url": "/FoxBox/index.html"
   },
   {
-    "revision": "0db609f91aa4a34620c8",
+    "revision": "9086bf16e1f67ac4ae41",
     "url": "/FoxBox/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FoxBox/static/js/2.5ff658e7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0db609f91aa4a34620c8",
-    "url": "/FoxBox/static/js/main.80b37538.chunk.js"
+    "revision": "9086bf16e1f67ac4ae41",
+    "url": "/FoxBox/static/js/main.d47dce17.chunk.js"
   },
   {
     "revision": "a05ed21cd4f9f973d870",
