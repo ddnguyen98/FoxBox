@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/FoxBox/static/css/main.e6421bc7.chunk.css",
-    "main.js": "/FoxBox/static/js/main.19bd7457.chunk.js",
-    "main.js.map": "/FoxBox/static/js/main.19bd7457.chunk.js.map",
+    "main.css": "/FoxBox/static/css/main.c9b008b8.chunk.css",
+    "main.js": "/FoxBox/static/js/main.45a3e682.chunk.js",
+    "main.js.map": "/FoxBox/static/js/main.45a3e682.chunk.js.map",
     "runtime-main.js": "/FoxBox/static/js/runtime-main.73789e85.js",
     "runtime-main.js.map": "/FoxBox/static/js/runtime-main.73789e85.js.map",
-    "static/css/2.88a9e19c.chunk.css": "/FoxBox/static/css/2.88a9e19c.chunk.css",
-    "static/js/2.687636a4.chunk.js": "/FoxBox/static/js/2.687636a4.chunk.js",
-    "static/js/2.687636a4.chunk.js.map": "/FoxBox/static/js/2.687636a4.chunk.js.map",
+    "static/css/2.414cca31.chunk.css": "/FoxBox/static/css/2.414cca31.chunk.css",
+    "static/js/2.08f4eb3c.chunk.js": "/FoxBox/static/js/2.08f4eb3c.chunk.js",
+    "static/js/2.08f4eb3c.chunk.js.map": "/FoxBox/static/js/2.08f4eb3c.chunk.js.map",
     "index.html": "/FoxBox/index.html",
-    "precache-manifest.aca2f8242b56b1b083e6ad87bcedc10b.js": "/FoxBox/precache-manifest.aca2f8242b56b1b083e6ad87bcedc10b.js",
+    "precache-manifest.e7d63c5aed79e9d5bbcdec8ddd892a60.js": "/FoxBox/precache-manifest.e7d63c5aed79e9d5bbcdec8ddd892a60.js",
     "service-worker.js": "/FoxBox/service-worker.js",
-    "static/css/2.88a9e19c.chunk.css.map": "/FoxBox/static/css/2.88a9e19c.chunk.css.map",
-    "static/css/main.e6421bc7.chunk.css.map": "/FoxBox/static/css/main.e6421bc7.chunk.css.map",
-    "static/js/2.687636a4.chunk.js.LICENSE.txt": "/FoxBox/static/js/2.687636a4.chunk.js.LICENSE.txt",
+    "static/css/2.414cca31.chunk.css.map": "/FoxBox/static/css/2.414cca31.chunk.css.map",
+    "static/css/main.c9b008b8.chunk.css.map": "/FoxBox/static/css/main.c9b008b8.chunk.css.map",
+    "static/js/2.08f4eb3c.chunk.js.LICENSE.txt": "/FoxBox/static/js/2.08f4eb3c.chunk.js.LICENSE.txt",
     "static/media/index.css": "/FoxBox/static/media/mid.a14e1167.png",
     "static/media/wan.mp3": "/FoxBox/static/media/wan.138cb2e5.mp3"
   },
   "entrypoints": [
     "static/js/runtime-main.73789e85.js",
-    "static/css/2.88a9e19c.chunk.css",
-    "static/js/2.687636a4.chunk.js",
-    "static/css/main.e6421bc7.chunk.css",
-    "static/js/main.19bd7457.chunk.js"
+    "static/css/2.414cca31.chunk.css",
+    "static/js/2.08f4eb3c.chunk.js",
+    "static/css/main.c9b008b8.chunk.css",
+    "static/js/main.45a3e682.chunk.js"
   ]
 }
