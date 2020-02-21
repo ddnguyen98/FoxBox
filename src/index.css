@@ -1,10 +1,25 @@
 
 .bg, .farbg, .midbg, .closebg{
+  display: block;
   position: absolute;
   height: 300px;
   width: 130%;
   z-index: -1;
+  background-repeat: repeat-x;
+  background-position: center;
+}
 
+.bg{
+  background-image: url('./layers/bg.png');
+}
+.farbg{
+  background-image: url('./layers/far.png');
+}
+.midbg{
+  background-image: url('./layers/mid.png');
+}
+.closebg{
+  background-image: url('./layers/close.png');
 }
 
 .bgcontainer {

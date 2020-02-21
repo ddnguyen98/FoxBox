@@ -1,17 +1,20 @@
 [
     {
-     "date":"2/18",
-     "weekday":"Tuesday",
-     "desc":"Group A come to kill"
+        "month":"1",
+        "day":"18",
+        "year": "2020",
+        "desc":"Group A come to kill"
     },
     {
-        "date":"2/19",
-        "weekday":"Wedsnday",
-        "desc":"Kill the epic dog"
+        "month":"1",
+        "day":"20",
+        "year": "2020",
+        "desc":"Group A come to kill"
     },
     {
-        "date":"2/20",
-        "weekday":"Thursday",
-        "desc":"Gathering Day"
+        "month":"1",
+        "day":"4",
+        "year": "2020",
+        "desc":"Group B come to kill"
     }
 ]

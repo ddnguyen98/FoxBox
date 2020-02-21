@@ -13,12 +13,12 @@ function ParallaxBG() {
     return (
         <animated.div className="bgcontainer"
         onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
-            <animated.img src="./images/layers/bg.png" alt="Background" className="bg" />
-            <animated.img src="./images/layers/far.png" alt="Background" className="farbg" 
+            <animated.div alt="Background" className="bg" />
+            <animated.div alt="Background" className="farbg" 
             style={{ transform: props.xy.interpolate(trans1) }}/>
-            <animated.img src="./images/layers/mid.png" alt="Background" className="midbg" 
+            <animated.div alt="Background" className="midbg" 
             style={{ transform: props.xy.interpolate(trans2) }}/>
-            <animated.img src="./images/layers/close.png" alt="Background" className="closebg" 
+            <animated.div alt="Background" className="closebg" 
             style={{ transform: props.xy.interpolate(trans3) }}/>
         </animated.div>
     );
