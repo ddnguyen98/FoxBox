@@ -7,7 +7,7 @@ import dayGridPlugin from '@fullcalendar/daygrid'
 
 import './main.scss'
 
-const CALENDAR_ID = 'gb70im82hum1hnb7jkoc2u9oos@group.calendar.google.com'
+const CALENDAR_ID = 'umn.edu_6gok0mfp3fdc2g6kb8qesmjfro@group.calendar.google.com'
 const API_KEY = 'AIzaSyAbsu0VJ3yJnUZp6yoJSsjGYcOK6vozRs4'
 let url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}`
 
