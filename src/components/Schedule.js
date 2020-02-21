@@ -1,68 +1,52 @@
 import React, { Component } from 'react';
-import raidDates from '../json/raidDates';
-import Calendar from 'react-calendar';
+import request from 'superagent'
+
+import FullCalendar from '@fullcalendar/react'
+import googleCalendarPlugin from '@fullcalendar/google-calendar';
+import dayGridPlugin from '@fullcalendar/daygrid'
+
+import './main.scss'
+
+const CALENDAR_ID = 'gb70im82hum1hnb7jkoc2u9oos@group.calendar.google.com'
+const API_KEY = 'AIzaSyAbsu0VJ3yJnUZp6yoJSsjGYcOK6vozRs4'
+let url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}`
 
 class Schedule extends Component {
-    componentDidMount() {
-        let newDate = this.state.maxDate;
-        newDate.setFullYear(newDate.getFullYear() + 1)
-        this.setState({maxDate: newDate})
+    componentDidMount = () => {
+        this.getEvents();
+    }
+
+    getEvents(){
+        request
+        .get(url)
+        .end((err, resp) => {
+          if (!err) {
+            const events = []
+            JSON.parse(resp.text).items.map((event) => {
+              events.push({
+                start: event.start.date || event.start.dateTime,
+                end: event.end.date || event.end.dateTime,
+                title: event.summary,
+              })
+            })
+            this.setState({calendarEvents: events})
+          }
+        })
     }
 
     state = {
-        date: new Date(),
-        maxDate: new Date()
-    }
-
-    onChange = date => this.setState({ date })
-    
-
+        calendarEvents: {
+        }
+      }
     render() {
-        const tileContent = ({ date, view }) => {
-            let returnVal;
-            
-            raidDates.forEach(e => {
-                console.log(e.month);
-                if( e.month === date.getMonth().toString()) {
-                    console.log('month')
-                    console.log(`Cal date ${e.day} current ${date.getDate()}`)
-                    if( e.day === date.getDate().toString()) {
-                        console.log('day')
-                        if( e.year === date.getFullYear().toString()) {
-                            console.log('year')
-                        }        
-                    }
-                }
-
-
-                if(
-                    e.month === date.getMonth().toString() 
-                    && e.day === date.getDate().toString() 
-                    && e.year === date.getFullYear().toString()) 
-                {
-                    returnVal = <p>{e.desc}</p>
-                }          
-            });
-            console.log(date.getDate())
-            return returnVal;
-        };
-
+        console.log(this.state.calendarEvents)
         return (
             <div>
-                <h1>Schedule</h1>
-                <Calendar
-                    onChange={this.onChange}
-                    value={this.state.date}
-                    tileContent={tileContent}
-                    maxDate={this.state.maxDate}
-                />
-                {raidDates.map((e, index) => (
-                    <div key={index}>
-                        <h2>{e.weekday}</h2>
-                        <h3>{e.date}</h3>
-                        <p>{e.desc}</p>
-                    </div>
-                ))}
+                <FullCalendar 
+                    defaultView="dayGridMonth"
+                    events={this.state.calendarEvents}
+                    plugins={[ dayGridPlugin, googleCalendarPlugin ]}
+                    />
             </div>
         );
     }
