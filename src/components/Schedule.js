@@ -9,7 +9,7 @@ import './main.scss'
 
 const CALENDAR_ID = 'umn.edu_6gok0mfp3fdc2g6kb8qesmjfro@group.calendar.google.com'
 const API_KEY = 'AIzaSyAbsu0VJ3yJnUZp6yoJSsjGYcOK6vozRs4'
-let url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}`
+let url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?key=${API_KEY}&singleEvents=true`
 
 class Schedule extends Component {
     componentDidMount = () => {
@@ -23,11 +23,12 @@ class Schedule extends Component {
           if (!err) {
             const events = []
             JSON.parse(resp.text).items.map((event) => {
-              events.push({
-                start: event.start.date || event.start.dateTime,
-                end: event.end.date || event.end.dateTime,
-                title: event.summary,
-              })
+                events.push({
+                    start: event.start.date || event.start.dateTime,
+                    end: event.end.date || event.end.dateTime,
+                    title: event.summary
+                })
+
             })
             this.setState({calendarEvents: events})
           }
@@ -39,13 +40,12 @@ class Schedule extends Component {
         }
       }
     render() {
-        console.log(this.state.calendarEvents)
         return (
             <div>
                 <FullCalendar 
                     defaultView="dayGridMonth"
                     events={this.state.calendarEvents}
-                    plugins={[ dayGridPlugin, googleCalendarPlugin ]}
+                    plugins={[ dayGridPlugin ]}
                     />
             </div>
         );
