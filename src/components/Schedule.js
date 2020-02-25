@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import request from 'superagent'
 
 import FullCalendar from '@fullcalendar/react'
-import googleCalendarPlugin from '@fullcalendar/google-calendar';
 import dayGridPlugin from '@fullcalendar/daygrid'
 
 import './main.scss'
@@ -28,7 +27,6 @@ class Schedule extends Component {
                     end: event.end.date || event.end.dateTime,
                     title: event.summary
                 })
-
             })
             this.setState({calendarEvents: events})
           }
@@ -46,6 +44,7 @@ class Schedule extends Component {
                     defaultView="dayGridMonth"
                     events={this.state.calendarEvents}
                     plugins={[ dayGridPlugin ]}
+                    eventLimit={true}
                     />
             </div>
         );

@@ -11,7 +11,6 @@ class Home extends Component {
         return (
             <div>
                 Dogs on the daily
-                <img src="./images/bella.png" alt="Bella drunk on donut" onClick={() => wan.play()} />
             </div>
         );
     }

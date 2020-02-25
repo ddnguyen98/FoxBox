@@ -2,11 +2,16 @@
 .bg, .farbg, .midbg, .closebg{
   display: block;
   position: absolute;
-  height: 300px;
-  width: 200%;
+  height: 390px;
+  width: 120%;
   z-index: -1;
   background-repeat: repeat-x;
-  background-position: left;
+  background-position: bottom;
+  background-size: contain;
+}
+
+.closebg{
+  background-size: 50% 50%;
 }
 
 .bg{
@@ -16,16 +21,26 @@
   background-image: url('./layers/far.png');
 }
 .midbg{
-  background-image: url('./layers/mid.png');
+  background-image: url('./layers/med.png')
 }
 .closebg{
-  background-image: url('./layers/close.png');
+  background-image: url('./layers/close.png')
+}
+.bglogo{
+  display: block;
+  position: absolute;
+  z-index: 1;
+  background-size: contain;
+  height: 250px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-image: url('./layers/FOX.png')
 }
 
 .bgcontainer {
   overflow: hidden;
   position: relative;
-  height: 240px;
+  height: 340px;
   width: 100%;
   display: flex;
   justify-content: center;
