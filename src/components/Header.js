@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { Nav, Navbar, NavbarBrand, NavItem, NavLink, Container, NavbarToggler, Collapse } from "reactstrap"
+import { Nav, Navbar, NavItem, NavLink, Container, NavbarToggler, Collapse } from "reactstrap"
 
 class Header extends Component {
     constructor(props) {
@@ -14,25 +14,24 @@ class Header extends Component {
         const toggle = () => this.setState({isOpen: !this.state.isOpen});
 
         return (
-            <Navbar color="light" light expand="md" className="navigation">
+            <Navbar dark="true" color="dark" light expand="md" className="navigation">
                 <Container>
-                    <NavbarBrand href="#/">Bella Bella Bella</NavbarBrand>
                     <NavbarToggler onClick={() => toggle()} />
                         <Collapse isOpen={this.state.isOpen} navbar>
-                            <Nav className="mr-auto" navbar>
-                                <NavItem>
+                            <Nav className="navh" navbar >
+                                <NavItem className="navhitem">
                                     <NavLink href="#/">Home</NavLink>
                                 </NavItem>
-                                <NavItem>
+                                <NavItem className="navhitem">
                                     <NavLink href="#/about">About</NavLink>
                                 </NavItem>
-                                <NavItem>
+                                <NavItem className="navhitem">
                                     <NavLink href="#/members">Members</NavLink>
                                 </NavItem>
-                                <NavItem>
+                                <NavItem className="navhitem">
                                     <NavLink href="#/schedule">Schedule</NavLink>
                                 </NavItem>
-                                <NavItem>
+                                <NavItem className="navhitem">
                                     <NavLink href="#/contact">Contact</NavLink>
                                 </NavItem>
                             </Nav>

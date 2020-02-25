@@ -8,7 +8,6 @@ class Members extends Component {
         let owners = [];
         let admin = [];
         let mods = [];
-        let members = [];
 
         // Checks each rank in JSON and stores it in simple array
         membersJSON.forEach(e => {
@@ -18,14 +17,11 @@ class Members extends Component {
             else if (e.rank === "Admin") {
                 admin.push(e);
             }
-            else if (e.rank === "Mods") {
+            else {
                 mods.push(e);
             }
-            else {
-                members.push(e);
-            }
         });
-        
+
         // Shoots out data based on arrays
         return (
             <div>
@@ -54,17 +50,6 @@ class Members extends Component {
                 ))}
                 <h1>Mods</h1>
                 {mods.map((e, index) => (
-                    <div key={index}>
-                        <img src={`./images/${e.image}`} alt={`${e.username}`} width="100" height="100"/>
-                        <h2>{e.username}</h2>
-                        <h3>{e.main}</h3>
-                        <h4>{e.secondary}</h4>
-                        <p>Games playing: {e.other}</p>
-                        <p>{e.bio}</p>
-                    </div>
-                ))}
-                <h1>Members</h1>
-                {members.map((e, index) => (
                     <div key={index}>
                         <img src={`./images/${e.image}`} alt={`${e.username}`} width="100" height="100"/>
                         <h2>{e.username}</h2>
