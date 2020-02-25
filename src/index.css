@@ -6,7 +6,7 @@ body{
 .bodywrapper {
   background-color: white;
   padding: 25px 0;
-  margin: 15px 0;
+  margin: 20px auto;
   box-shadow: 0px 3px 0px 3px rgba(122,122,122,1);
   text-align: center;
 }
