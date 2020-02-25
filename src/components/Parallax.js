@@ -5,9 +5,9 @@ import wanSound from '../sound/wan.mp3';
 import UIfx from 'uifx'; 
 
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2]
-const trans1 = (x, y) => `translate3d(${x / 100}px,${y / 100}px,0)`
-const trans2 = (x, y) => `translate3d(${x / 40}px,${y / 80}px,0)`
-const trans3 = (x, y) => `translate3d(${x / 30}px,${y / 80}px,0)`
+const trans1 = (x, y) => `translate3d(${x / 50}px,${y / 70}px,0)`
+const trans2 = (x, y) => `translate3d(${x / 25}px,${y / 70}px,0)`
+const trans3 = (x, y) => `translate3d(${x / 15}px,${y / 50}px,0)`
 
 const wan = new UIfx(wanSound)
 
@@ -15,7 +15,7 @@ const wan = new UIfx(wanSound)
 function ParallaxBG() {
     const [state, toggle] = useState(true);
     const { x } = useSpring({ from: { x: 0 }, x: state ? 1 : 0, config: { duration: 700 } });
-    const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }));
+    const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 600, friction: 140 } }));
 
     return (
         <animated.div className="bgcontainer"

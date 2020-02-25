@@ -10,6 +10,7 @@ class Members extends Component {
         let mods = [];
         let members = [];
 
+        // Checks each rank in JSON and stores it in simple array
         membersJSON.forEach(e => {
             if (e.rank === "Owner") {
                 owners.push(e);
@@ -24,7 +25,8 @@ class Members extends Component {
                 members.push(e);
             }
         });
-
+        
+        // Shoots out data based on arrays
         return (
             <div>
                 Members
